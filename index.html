@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/ismm.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <header
+        class
+        style="position: absolute;top: 30px; width: 100%; text-align: center;"
+      ></header>
+      <div class="slides">
+        <section class="title-slide">
+          <img
+            src="img/Logoismm_transparent.png"
+            alt="ismm_logo"
+            width="100px"
+          />
+          <h1>Trasformazione digitale nel procurement militare</h1>
+          <h2>Pierpaolo DA FIENO</h2>
+          <h3>Venezia, 25 luglio 2019</h3>
+        </section>
+        <section>
+          <h3>Trasformazione Digitale</h3>
+          <ul>
+            <li>Perché?</li>
+            <li>Cosa è?</li>
+            <li>Come si fa?</li>
+            <li>Peculiarità del procurement militare</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h3>Perché?</h3>
+          </section>
+          <section data-state="header1">
+            <style>
+              .header1 header:after {
+                content: "Perché?";
+              }
+            </style>
+            <p>La tecnologia cambia le regole</p>
+            <span class="fragment">
+              <img class="icon" src="img/Amazon_logo.png" alt="amazon" />
+              <img class="icon" src="img/uber.png" alt="uber" />
+              <img class="icon" src="img/Netflix-new-icon.png" alt="netflix" />
+              <img
+                class="icon"
+                src="img/spacex-vector-logo-small.png"
+                alt="spacex"
+              />
+              <img
+                class="icon"
+                src="img/Cambridge_Analytica_logo.png"
+                alt="cambridge"
+              />
+            </span>
+            <p class="fragment">
+              <b class="highlight">rapidamente</b> e
+              <b class="highlight">drasticamente.</b>
+            </p>
+          </section>
+          <section data-state="header1">
+            <p>Il mondo evolve <span class="highlight">naturalmente</span>.</p>
+            <p class="fragment">
+              Le organizzazioni <span class="highlight">no</span>.
+            </p>
+          </section>
+          <section data-state="header1">
+            <p>
+              L'inerzia genera <span class="highlight">distacco</span> e
+              <span class="highlight">barriere</span>.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section><h3>Cosa è?</h3></section>
+          <section data-transition="slide-in fade-out">
+            <style>
+              .header2 header:after {
+                content: "Cosa è?";
+              }
+            </style>
+            <p>Paperless</p>
+            <p>Firma digitale</p>
+            <p>Cloud</p>
+          </section>
+          <section
+            data-state="header2"
+            data-background-image="img/Crash.png"
+          ></section>
+          <section data-state="header2">
+            <p>Aderenza al contesto</p>
+            <p>Capacità di adattamento</p>
+            <p>Mentalità innovativa</p>
+          </section>
+          <section data-state="header2">
+            <img
+              src="img/innovation_mindset.png"
+              alt="innovation_mindset"
+              class="figure"
+            />
+            <blockquote class="fragment">
+              <p>"Test Fast. Fail Fast. Adjust Fast."</p>
+              <footer>--Tom Peters</footer>
+            </blockquote>
+          </section>
+        </section>
+
+        <section>
+          <section><h3>Come si fa?</h3></section>
+          <section data-state="header3">
+            <style>
+              .header3 header:after {
+                content: "Come si fa?";
+              }
+            </style>
+            <div class="grid-container">
+              <div class="grid-left">
+                <p class="letterine">
+                  Bridge
+                </p>
+                <p class="letterine">
+                  Uncover
+                </p>
+                <p class="letterine">
+                  Iterate
+                </p>
+                <p class="letterine">
+                  Leverage
+                </p>
+                <p class="letterine">
+                  Disseminate
+                </p>
+              </div>
+              <div class="grid-right">
+                <p class="tag">Visione condivisa</p>
+                <p class="tag">Passi di trasformazione</p>
+                <p class="tag">Scrum</p>
+                <p class="tag">Scrum</p>
+                <p class="tag">Scrum</p>
+              </div>
+              <div class="grid-footer">
+                <blockquote class="footnote">
+                  Digital Transformation: Build Your Organization's Future for
+                  the Innovation Age
+                  <footer>Lindsay Herbert, 2017</footer>
+                </blockquote>
+              </div>
+            </div>
+          </section>
+          <section data-state="header3">Slide 2</section>
+        </section>
+
+        <section>
+          <section><h3>Applicazione nel procurement militare</h3></section>
+          <section>Slide 2</section>
+          <section>Slide 2</section>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true },
+          { src: "plugin/zoom-js/zoom.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>

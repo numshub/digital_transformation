@@ -1,0 +1,152 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is brown.
+ *
+ * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Override theme settings (see ../template/settings.scss)
+@font-face {
+  font-family: Oswald;
+  src: url("fonts/Oswald[wght].ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: PatuaOne;
+  src: url("fonts/PatuaOne-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$mainFont: "Oswald", "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif,
+  serif;
+$mainColor: #231f20;
+$headingFont: "PatuaOne", "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif;
+$headingColor: #bb4430;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #d3cdaa;
+$linkColor: #7ebdc2;
+$linkColorHover: lighten($linkColor, 20%);
+$selectionBackgroundColor: #efe6dd;
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+.reveal .slides p,
+li {
+  font-size: 40pt;
+}
+
+.slides .title-slide img {
+  border: none;
+  box-shadow: none;
+  margin: 0px;
+  background-color: transparent;
+}
+
+.reveal section img.icon {
+  height: 100px;
+  box-shadow: none;
+  border: 1px;
+  background: transparent;
+}
+
+.slides .title-slide h1 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.slides .title-slide h2 {
+  font-size: 0.5em;
+  margin: 0px;
+  text-align: right;
+  color: $mainColor;
+}
+
+.slides .title-slide h3 {
+  color: $headingColor;
+  font-size: 0.5em;
+  margin: 0px;
+  text-align: left;
+  color: $mainColor;
+}
+
+.highlight {
+  color: $headingColor;
+}
+
+header {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  font-family: $headingFont;
+  color: $linkColor;
+}
+
+.reveal section img.figure {
+  height: 250px;
+  box-shadow: none;
+  border: 1px;
+  background: transparent;
+}
+
+.letterine {
+  text-align: left;
+  height: 60px;
+}
+
+.letterine::first-letter {
+  font-size: 1.2em;
+  font-family: $headingFont;
+  color: $headingColor;
+}
+
+.reveal .slides p.tag {
+  height: 60px;
+  text-align: right;
+  font-size: 0.7em;
+}
+
+.reveal blockquote footer {
+  text-align: right;
+}
+
+.reveal blockquote.footnote {
+  font-family: $headingFont;
+  font-size: 0.5em;
+  display: table-cell;
+}
+
+div.grid-container {
+  display: grid;
+  grid-template-rows: 90% 10%;
+  grid-template-columns: 50% 50%;
+}
+
+div.grid-left {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+div.grid-right {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+div.grid-footer {
+  grid-row: 2;
+  grid-column: 1 / 2;
+}
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
