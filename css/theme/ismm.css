@@ -87,19 +87,19 @@ header {
   vertical-align: middle; }
 
 #swot_s {
-  background-image: url("../../../img/swot_s.png");
+  background-image: url("../../img/swot_s.png");
   color: #efe6dd; }
 
 #swot_w {
-  background-image: url("../../../img/swot_w.png");
+  background-image: url("../../img/swot_w.png");
   color: #7ebdc2; }
 
 #swot_o {
-  background-image: url("../../../img/swot_o.png");
+  background-image: url("../../img/swot_o.png");
   color: #231f20; }
 
 #swot_t {
-  background-image: url("../../../img/swot_t.png");
+  background-image: url("../../img/swot_t.png");
   color: #bb4430; }
 
 .letterine {
