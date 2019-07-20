@@ -21,7 +21,10 @@
 
 .reveal .slides p,
 li {
-  font-size: 40pt; }
+  font-size: 32pt; }
+
+.reveal .slides p small {
+  vertical-align: baseline; }
 
 .slides .title-slide img {
   border: none;
@@ -68,6 +71,37 @@ header {
   border: 1px;
   background: transparent; }
 
+.reveal section div.table {
+  display: table;
+  position: absolute;
+  left: 20%; }
+
+.reveal section div.row {
+  width: 100%; }
+
+.reveal section div.cell {
+  display: table-cell;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle; }
+
+#swot_s {
+  background-image: url("/img/swot_s.png");
+  color: #efe6dd; }
+
+#swot_w {
+  background-image: url("/img/swot_w.png");
+  color: #7ebdc2; }
+
+#swot_o {
+  background-image: url("/img/swot_o.png");
+  color: #231f20; }
+
+#swot_t {
+  background-image: url("/img/swot_t.png");
+  color: #bb4430; }
+
 .letterine {
   text-align: left;
   height: 60px; }
@@ -82,30 +116,33 @@ header {
   text-align: right;
   font-size: 0.7em; }
 
-.reveal blockquote footer {
-  text-align: right; }
+.reveal .slides blockquote p {
+  font-size: 1.1em; }
 
-.reveal blockquote.footnote {
+.reveal .slides blockquote.footnote {
+  width: 100%; }
+
+.reveal .slides blockquote.footnote footer p {
   font-family: "PatuaOne", "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
-  font-size: 0.5em;
-  display: table-cell; }
+  font-size: 0.5em; }
 
-div.grid-container {
-  display: grid;
-  grid-template-rows: 90% 10%;
-  grid-template-columns: 50% 50%; }
+.container {
+  width: 100%; }
 
-div.grid-left {
-  grid-row: 1;
-  grid-column: 1; }
+.container .row {
+  display: block; }
 
-div.grid-right {
-  grid-row: 1;
-  grid-column: 2; }
+.container .row div {
+  display: inline-block;
+  white-space: nowrap; }
 
-div.grid-footer {
-  grid-row: 2;
-  grid-column: 1 / 2; }
+.container .row .left {
+  text-align: left;
+  width: 40%; }
+
+.container .row .right {
+  text-align: right;
+  width: 57%; }
 
 /*********************************************
  * GLOBAL STYLES

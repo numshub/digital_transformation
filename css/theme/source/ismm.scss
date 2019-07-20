@@ -44,7 +44,11 @@ $selectionBackgroundColor: #efe6dd;
 
 .reveal .slides p,
 li {
-  font-size: 40pt;
+  font-size: 32pt;
+}
+
+.reveal .slides p small {
+  vertical-align: baseline;
 }
 
 .slides .title-slide img {
@@ -100,6 +104,44 @@ header {
   background: transparent;
 }
 
+.reveal section div.table {
+  display: table;
+  position: absolute;
+  left: 20%;
+}
+
+.reveal section div.row {
+  width: 100%;
+}
+
+.reveal section div.cell {
+  display: table-cell;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#swot_s {
+  background-image: url("/img/swot_s.png");
+  color: $selectionBackgroundColor;
+}
+
+#swot_w {
+  background-image: url("/img/swot_w.png");
+  color: $linkColor;
+}
+
+#swot_o {
+  background-image: url("/img/swot_o.png");
+  color: $mainColor;
+}
+
+#swot_t {
+  background-image: url("/img/swot_t.png");
+  color: $headingColor;
+}
+
 .letterine {
   text-align: left;
   height: 60px;
@@ -117,36 +159,42 @@ header {
   font-size: 0.7em;
 }
 
-.reveal blockquote footer {
-  text-align: right;
+.reveal .slides blockquote p {
+  font-size: 1.1em;
 }
 
-.reveal blockquote.footnote {
+.reveal .slides blockquote.footnote {
+  width: 100%;
+}
+
+.reveal .slides blockquote.footnote footer p {
   font-family: $headingFont;
   font-size: 0.5em;
-  display: table-cell;
 }
 
-div.grid-container {
-  display: grid;
-  grid-template-rows: 90% 10%;
-  grid-template-columns: 50% 50%;
+.container {
+  width: 100%;
 }
 
-div.grid-left {
-  grid-row: 1;
-  grid-column: 1;
+.container .row {
+  display: block;
 }
 
-div.grid-right {
-  grid-row: 1;
-  grid-column: 2;
+.container .row div {
+  display: inline-block;
+  white-space: nowrap;
 }
 
-div.grid-footer {
-  grid-row: 2;
-  grid-column: 1 / 2;
+.container .row .left {
+  text-align: left;
+  width: 40%;
 }
+
+.container .row .right {
+  text-align: right;
+  width: 57%;
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------

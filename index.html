@@ -49,8 +49,11 @@
           <ul>
             <li>Perché?</li>
             <li>Cosa è?</li>
-            <li>Come si fa?</li>
-            <li>Peculiarità del procurement militare</li>
+            <li>
+              Come si fa?<small style="vertical-align: baseline"
+                >(nel procurement militare)</small
+              >
+            </li>
           </ul>
         </section>
 
@@ -61,7 +64,7 @@
           <section data-state="header1">
             <style>
               .header1 header:after {
-                content: "Perché?";
+                content: "Perché";
               }
             </style>
             <p>La tecnologia cambia le regole</p>
@@ -101,10 +104,10 @@
 
         <section>
           <section><h3>Cosa è?</h3></section>
-          <section data-transition="slide-in fade-out">
+          <section data-transition="slide-in fade-out" data-state="header2">
             <style>
               .header2 header:after {
-                content: "Cosa è?";
+                content: "Cosa";
               }
             </style>
             <p>Paperless</p>
@@ -116,9 +119,9 @@
             data-background-image="img/Crash.png"
           ></section>
           <section data-state="header2">
-            <p>Aderenza al contesto</p>
-            <p>Capacità di adattamento</p>
-            <p>Mentalità innovativa</p>
+            <p><span class="highlight">Aderenza</span> al contesto</p>
+            <p>Capacità di <span class="highlight">adattamento</span></p>
+            <p>Mentalità <span class="highlight">innovativa</span></p>
           </section>
           <section data-state="header2">
             <img
@@ -135,53 +138,158 @@
 
         <section>
           <section><h3>Come si fa?</h3></section>
+
           <section data-state="header3">
             <style>
               .header3 header:after {
-                content: "Come si fa?";
+                content: "Come";
               }
             </style>
-            <div class="grid-container">
-              <div class="grid-left">
-                <p class="letterine">
-                  Bridge
-                </p>
-                <p class="letterine">
-                  Uncover
-                </p>
-                <p class="letterine">
-                  Iterate
-                </p>
-                <p class="letterine">
-                  Leverage
-                </p>
-                <p class="letterine">
-                  Disseminate
-                </p>
+            <div class="container">
+              <div class="row">
+                <div class="left">
+                  <p class="letterine">Bridge</p>
+                </div>
+                <div class="right fragment" data-fragment-index="1">
+                  <p>Visione condivisa</p>
+                </div>
               </div>
-              <div class="grid-right">
-                <p class="tag">Visione condivisa</p>
-                <p class="tag">Passi di trasformazione</p>
-                <p class="tag">Scrum</p>
-                <p class="tag">Scrum</p>
-                <p class="tag">Scrum</p>
+
+              <div class="row">
+                <div class="left">
+                  <p class="letterine">Uncover</p>
+                </div>
+                <div class="right fragment" data-fragment-index="2">
+                  <p>Passi di trasformazione</p>
+                </div>
               </div>
-              <div class="grid-footer">
-                <blockquote class="footnote">
+
+              <div class="row">
+                <div class="left">
+                  <p class="letterine">Iterate</p>
+                </div>
+                <div class="right fragment" data-fragment-index="3">
+                  <p>Attuazione <small>(Agile/Design Thinking/...)</small></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="left">
+                  <p class="letterine">Leverage</p>
+                </div>
+                <div class="right fragment" data-fragment-index="4">
+                  <p>Consenso</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="left">
+                  <p class="letterine">Disseminate</p>
+                </div>
+                <div class="right fragment" data-fragment-index="5">
+                  <p>Espansione</p>
+                </div>
+              </div>
+            </div>
+            <blockquote class="footnote">
+              <footer>
+                <p>
                   Digital Transformation: Build Your Organization's Future for
-                  the Innovation Age
-                  <footer>Lindsay Herbert, 2017</footer>
-                </blockquote>
+                  the Innovation Age, Lindsay Herbert, 2017
+                </p>
+              </footer>
+            </blockquote>
+          </section>
+
+          <section data-state="header3">
+            <h4>Scrum&trade;</h4>
+            <ul>
+              <li>Framework agile per prodotti complessi</li>
+              <li>Contesti ad alto livello di incertezza</li>
+              <li>Referenze in ambito militare</li>
+            </ul>
+          </section>
+
+          <section data-state="header3">
+            <h4>Gli attori di Scrum&trade;</h4>
+            <ul>
+              <li>Product Owner</li>
+              <li>Team di Sviluppo</li>
+              <li>Scrum Master</li>
+            </ul>
+          </section>
+
+          <section data-state="header3">
+            <h4>Punti chiave di Scrum&trade;</h4>
+            <ul>
+              <li>Team multicompetenze</li>
+              <li>Sprint brevi e cadenzati</li>
+              <li>Revisione e Retrospettiva</li>
+            </ul>
+          </section>
+
+          <section data-state="header3">
+            <h4>I principi di Scrum&trade;</h4>
+            <ul>
+              <li>Indipendenza</li>
+              <li>Autonomia</li>
+              <li>Trasparenza</li>
+            </ul>
+          </section>
+
+          <section data-state="header3">
+            <div class="table">
+              <div class="row">
+                <div class="cell" id="swot_s">
+                  <p>Teamwork</p>
+                  <p>Pianificazione</p>
+                </div>
+                <div class="cell" id="swot_w">
+                  <p>Militari/Civili</p>
+                  <p>Org. Verticale</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell" id="swot_o">
+                  <p>Partnerships</p>
+                  <p>Risorse qualificate</p>
+                </div>
+                <div class="cell" id="swot_t">
+                  <p>Avvicendamento</p>
+                  <p>Conflitto interno</p>
+                </div>
               </div>
             </div>
           </section>
-          <section data-state="header3">Slide 2</section>
         </section>
 
         <section>
-          <section><h3>Applicazione nel procurement militare</h3></section>
-          <section>Slide 2</section>
-          <section>Slide 2</section>
+          <h3>In sintesi</h3>
+          <ul>
+            <li class="fragment">
+              Personale, Processi, Piattaforme, Partnerships
+            </li>
+            <li class="fragment">Sponsorizzazione e Consenso</li>
+            <li class="fragment">Mentalitá innovativa</li>
+            <li class="fragment">Autonomia e trasparenza</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Domande?</h3>
+          <img
+            src="/img/question.jpg"
+            alt="question"
+            style="width: 100%; border: transparent"
+          />
+          <blockquote class="footnote">
+            <footer>
+              <p>
+                Pierpaolo Da Fieno <br />
+                pierpaolo.dafieno@gmail.com
+              </p>
+            </footer>
+          </blockquote>
         </section>
       </div>
     </div>
@@ -199,7 +307,13 @@
           { src: "plugin/notes/notes.js", async: true },
           { src: "plugin/highlight/highlight.js", async: true },
           { src: "plugin/zoom-js/zoom.js", async: true }
-        ]
+        ],
+        hash: true
+      });
+    </script>
+    <script>
+      Reveal.addEventListener("fragmentshown", function(event) {
+        document.getElementById("postfragment").style.color = "red";
       });
     </script>
   </body>
