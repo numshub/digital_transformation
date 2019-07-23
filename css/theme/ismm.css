@@ -88,19 +88,23 @@ header {
 
 #swot_s {
   background-image: url("/img/swot_s.png");
-  color: #efe6dd; }
+  color: #efe6dd;
+  background-size: 100%; }
 
 #swot_w {
   background-image: url("/img/swot_w.png");
-  color: #7ebdc2; }
+  color: #7ebdc2;
+  background-size: 100%; }
 
 #swot_o {
   background-image: url("/img/swot_o.png");
-  color: #231f20; }
+  color: #231f20;
+  background-size: 100%; }
 
 #swot_t {
   background-image: url("/img/swot_t.png");
-  color: #bb4430; }
+  color: #bb4430;
+  background-size: 100%; }
 
 .letterine {
   text-align: left;
